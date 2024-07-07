@@ -1,0 +1,23 @@
+import java.util.*;
+class SunRise
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int size =s.nextInt();
+int h[]=new int[size];
+int i,count=0;
+for( i=0;i<size;i++)
+{
+h[i]=s.nextInt();
+}
+for( i=0;i<size;i++)
+{
+if(h[0]>=h[i])
+{
+count++;
+}
+}
+System.out.println(count);
+}
+}
